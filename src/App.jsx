@@ -7,7 +7,7 @@ import { useAtom } from "jotai";
 import { buttonAtom, buttonCounter } from "./jotai/masterAtom";
 import Cards from "./components/Card";
 import lagu from "./audio/lagu.mp3";
-import img from "./img/img.jpeg";
+import img3 from "./img/img3.jpeg";
 function App() {
   const card_next = [
     {
@@ -40,7 +40,6 @@ function App() {
     setButtonAtom(true);
   };
 
-  // play
   return (
     <React.Fragment>
       <div
@@ -128,7 +127,7 @@ function App() {
         {buttonAtoms && counter === 5 && (
           <div className="p-10">
             <Cards
-              img={img}
+              img={img3}
               title={"Sampai Jumpa"}
               desc={
                 "Sampai jumpa, Pak Marko. Doa kami menyertai langkah Anda dalam meniti perjalanan baru. Terima kasih atas semua pelajaran dan inspirasi yang telah Anda bagi selama ini."
@@ -138,7 +137,6 @@ function App() {
           </div>
         )}
         {/* card 5 */}
-
       </div>
     </React.Fragment>
   );

@@ -27,8 +27,8 @@ export default function Cards({ img, title, desc, classF }) {
       {" "}
       <Card className="mt-6 min-w-[250px]">
         {img && (
-          <CardHeader color="blue-gray" className="relative object-cover">
-            <img src={img} alt="" />
+          <CardHeader color="blue-gray" className="relative min-h-[20px] object-cover mx-auto">
+            <img src={img} alt="" className="max-w-[200px] min-h-[20px]"/>
           </CardHeader>
         )}
         <CardBody className={`${classF}`}>
