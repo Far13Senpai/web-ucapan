@@ -7,6 +7,7 @@ import { useAtom } from "jotai";
 import { buttonAtom, buttonCounter } from "./jotai/masterAtom";
 import Cards from "./components/Card";
 import lagu from "./audio/lagu.mp3";
+import img from "./img/img.jpeg";
 function App() {
   const card_next = [
     {
@@ -75,7 +76,6 @@ function App() {
         {buttonAtoms && counter === 1 && (
           <div className="p-10">
             <Cards
-              img={"img1.jpg"}
               title={"Terima Kasih"}
               desc={
                 "Terima kasih atas segala bimbingan dan dukungan Anda selama ini, Pak Marko."
@@ -89,7 +89,6 @@ function App() {
         {buttonAtoms && counter === 2 && (
           <div className="p-10">
             <Cards
-              img={"img1.jpg"}
               title={"Sukses Selalu"}
               desc={
                 "Selamat jalan, Pak. Semoga langkah Anda selalu diberkati dan sukses di tempat baru."
@@ -103,7 +102,6 @@ function App() {
         {buttonAtoms && counter === 3 && (
           <div className="p-10">
             <Cards
-              img={"img1.jpg"}
               title={"Merindukan Kehadiran"}
               desc={
                 "Kami akan merindukan kehadiran dan arahan Anda, Pak Marko. Terima kasih atas segala pengorbanan yang telah Anda berikan."
@@ -117,7 +115,6 @@ function App() {
         {buttonAtoms && counter === 4 && (
           <div className="p-10">
             <Cards
-              img={"img1.jpg"}
               title={"Penuh Berkah"}
               desc={
                 "Semoga perjalanan menuju masa depan yang baru penuh berkah dan keberhasilan, Pak Asep. Kami akan selalu mengenang jejak Anda di sini."
@@ -131,15 +128,17 @@ function App() {
         {buttonAtoms && counter === 5 && (
           <div className="p-10">
             <Cards
-              img={"img1.jpg"}
+              img={img}
               title={"Sampai Jumpa"}
               desc={
                 "Sampai jumpa, Pak Marko. Doa kami menyertai langkah Anda dalam meniti perjalanan baru. Terima kasih atas semua pelajaran dan inspirasi yang telah Anda bagi selama ini."
               }
+              classF="text-center"
             />
           </div>
         )}
         {/* card 5 */}
+
       </div>
     </React.Fragment>
   );

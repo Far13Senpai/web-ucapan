@@ -12,7 +12,7 @@ import { buttonCounter } from "../jotai/masterAtom";
 import { useAtom } from "jotai";
 
 // eslint-disable-next-line react/prop-types
-export default function Cards({ img, title, desc }) {
+export default function Cards({ img, title, desc, classF }) {
   const [counterAtom, setCounterAtom] = useAtom(buttonCounter);
   let isShowBtn = true;
   if (counterAtom === 4) {
@@ -26,10 +26,12 @@ export default function Cards({ img, title, desc }) {
     >
       {" "}
       <Card className="mt-6 min-w-[250px]">
-        <CardHeader color="blue-gray" className="relative h-56">
-          <img src={img} alt="" />
-        </CardHeader>
-        <CardBody>
+        {img && (
+          <CardHeader color="blue-gray" className="relative object-cover">
+            <img src={img} alt="" />
+          </CardHeader>
+        )}
+        <CardBody className={`${classF}`}>
           <Typography variant="h5" color="blue-gray" className="mb-2">
             {title}
           </Typography>
