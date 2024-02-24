@@ -117,7 +117,7 @@ function App() {
             <Cards
               title={"Penuh Berkah"}
               desc={
-                "Semoga perjalanan menuju masa depan yang baru penuh berkah dan keberhasilan, Pak Asep. Kami akan selalu mengenang jejak Anda di sini."
+                "Semoga perjalanan menuju masa depan yang baru penuh berkah dan keberhasilan, Pak Marko. Kami akan selalu mengenang jejak Anda di sini."
               }
             />
           </div>
